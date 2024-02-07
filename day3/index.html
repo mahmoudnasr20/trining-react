@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="starttimer()">
+    <style>
+        body{
+            background-color: bisque;
+            font-size: xx-large ;
+            width: 100px;
+        }
+    </style>
+    
+    <input type="text" onkeydown="eventspace(event)">
+
+    <script>
+        function eventspace(e){
+            if(e.key=="a"||e.key=="@ "){
+                e.preventDefault();
+            }
+        }
+    </script>
+
+<button onclick="starttimer()">get time</button>
+ <div id="time"> </div> 
+
+
+       
+    
+
+
+
+
+
+    <script src="./j.js"></script>
+</body>
+</html>
